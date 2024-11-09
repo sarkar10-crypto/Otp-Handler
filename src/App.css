@@ -1,38 +1,96 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  background-color: #4C7766;
+  height: 100vh;
+
+  /* form removal of dropdown from the input tag */
+  /* input[type=number]::-webkit-outer-spin-button,
+    input[type=number]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    } */
+  
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  margin-top: 40px;
+  font-size: 4rem;
+  color: #FBF0F4;
+  font-family: cursive;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.input-Tags{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  
+  
 }
+
+.input-Tags input{
+  font-family: 'Courier New', Courier, monospace;
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  font-size: 50px;
+  font-weight: bold;
+  /* border: none; */
+  outline: 2px;
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: aliceblue;
+}
+.container{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: #a1a3a3;
+}
+
+.submit-btn{
+  margin-top: 20px;
+}
+
+.btn{
+
+  padding: 0.8vw 2vw;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: cursive;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background-color: #4C7766;
+  font-family: cursive;
+  color: whitesmoke;
+  &:hover{
+    opacity: 0.8;
+    cursor: pointer;
+    background-color: rgb(235, 24, 24);
+
+    color: black;
+  }
+
+}
+
+.error{
+  border: 2px solid red;
+}
+  
+
+
